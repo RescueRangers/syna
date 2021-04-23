@@ -40,7 +40,7 @@
     <meta name="twitter:image" content="{{ $.Site.Params.image }}">
   {{- end }}
   {{ with .Site.Params.name -}}<meta name="author" content="{{ . }}">{{- end }}
-
+  {{ template "_internal/google_analytics.html" . }}
   {{ hugo.Generator }}
 
   <title>
